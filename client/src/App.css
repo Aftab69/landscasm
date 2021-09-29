@@ -14,3 +14,14 @@
   background-size: cover;
   background-position: center;
 }
+.homepage_container{
+  display: flex;
+  justify-content: center;
+}
+.homepage_container img{
+  width: 40vh;
+  height: 20vh;
+  margin-top: 60vh;
+  border: 2px solid #f39c12;
+  border-radius: 15px;
+}
