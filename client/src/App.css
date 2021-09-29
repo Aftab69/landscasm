@@ -17,11 +17,25 @@
 .homepage_container{
   display: flex;
   justify-content: center;
+  animation: slidingbanner 5s ease infinite;
 }
+@keyframes slidingbanner{
+  0%{
+    transform: translateX(10px);
+  }
+  50%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(10px);
+  }
+}
+
 .homepage_container img{
   width: 40vh;
   height: 20vh;
   margin-top: 60vh;
   border: 2px solid #f39c12;
   border-radius: 15px;
+  box-shadow: 5px 10px 8px #2e2e2e
 }
