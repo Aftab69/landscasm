@@ -14,7 +14,7 @@ require('./db/conn');
 app.use(express.json());
 app.use(require("./router/auth"));
 
-const PORT = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 /* const middleware = (req,res,next)=>{
     console.log(`Hello my middleware`);
@@ -39,6 +39,6 @@ if(process.env.NODE_ENV == "production"){
     app.use(express.static("client/build"));
 }
 
-app.listen(PORT || 5000, ()=>{
-    console.log(`Server is running at port ${PORT}`)
+app.listen(port, ()=>{
+    console.log(`Server is running at port ${port}`)
 });
