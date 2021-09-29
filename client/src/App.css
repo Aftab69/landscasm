@@ -6,3 +6,11 @@
 .logo_size{
   height: 5vh;
 }
+.home_background{
+  background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height:100%;
+  background-size: cover;
+  background-position: center;
+}
