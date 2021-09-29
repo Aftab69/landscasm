@@ -30,6 +30,7 @@ const User = require("../model/userSchema");
 
 //Using async await
 router.post("/register", async (req,res)=>{
+    console.log("check");
     const {name, email, phone, work, password, cpassword} = req.body;
     if(!name || !email || !phone || !work || !password || !cpassword){
         return res.status(422).json({ error: " please fill up the fields properly" })
