@@ -5,7 +5,7 @@ const DB = process.env.DATABASE;
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(()=>{
-    console.log(`connection successful`);
+    console.log(`connection successfuls`);
 }).catch((err)=>{
     console.log(`no connection`);
 }); 
