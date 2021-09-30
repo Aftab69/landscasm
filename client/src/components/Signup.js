@@ -17,6 +17,7 @@ const Signup = () => {
         })
     }
     const postData =async (e)=>{
+        e.preventDefault();
         const {name, email, phone, work, password, cpassword} = users;
         const res = await fetch("/register", {
             method:"POST",
