@@ -12,8 +12,15 @@
 @media only screen and (max-width: 600px) {
   .container_position {
     width: 60%;
+    margin-top: 20vh;
   }
 }
+@media only screen and (min-width: 600px) {
+  .home_background{
+    position: fixed;
+  }
+}
+
 .logo_size{
   height: 5vh;
 }
@@ -51,11 +58,11 @@
 }
 .login_background{
   background-image: url("https://images.pexels.com/photos/1172737/pexels-photo-1172737.jpeg?cs=srgb&dl=pexels-paola-l-1172737.jpg&fm=jpg");
-  position: fixed;
+  position: absolute;
   min-width: 100%;
   min-height:100%;
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
  }
 .login_banner_background{
   background-image: url("https://images.pexels.com/photos/4287012/pexels-photo-4287012.jpeg?cs=srgb&dl=pexels-miodrag-kitanovi%C4%87-4287012.jpg&fm=jpg")
