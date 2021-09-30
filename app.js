@@ -14,15 +14,7 @@ require('./db/conn');
 app.use(express.json());
 app.use(require("./router/auth"));
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, './client/public/index.html'), function(err) {
-      if (err) {
-        res.status(500).send(err)
-      }
-    })
-  })
-
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 /* const middleware = (req,res,next)=>{
     console.log(`Hello my middleware`);
