@@ -37,23 +37,25 @@ const Signin = () => {
     }
 
     return (
-        <div className="login_background">
-            <div className="container container_position login_banner_background">
+        <>
+        <div className ="login_background">
+            <div className ="container container_position login_banner_background">
                     <form method="POST">
                         <hr />
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input name="email" value={user.email} placeholder="your email" onChange={handleInputs} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div className ="mb-3">
+                            <label for="exampleInputEmail1" className ="form-label">Email address</label>
+                            <input name="email" value={user.email} placeholder="your email" onChange={handleInputs} type="email" className ="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input name="password" value={user.password} placeholder="your password" onChange={handleInputs} type="password" class="form-control" id="exampleInputPassword1" />
+                        <div className ="mb-3">
+                            <label for="exampleInputPassword1" className ="form-label">Password</label>
+                            <input name="password" value={user.password} placeholder="your password" onChange={handleInputs} type="password" className ="form-control" id="exampleInputPassword1" />
                         </div>
-                        <button type="submit" onClick={verifyData} class="btn btn-primary">Submit</button>
+                        <button type="submit" onClick={verifyData} className ="btn btn-primary">Submit</button>
                         <hr />
                     </form>       
             </div>
         </div>
+        </>
     )
 }
 
