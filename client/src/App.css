@@ -12,15 +12,9 @@
 @media only screen and (max-width: 600px) {
   .container_position {
     width: 60%;
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
 }
-@media only screen and (min-width: 600px) {
-  .home_background{
-    position: fixed;
-  }
-}
-
 .logo_size{
   height: 5vh;
 }
