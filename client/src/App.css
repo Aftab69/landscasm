@@ -55,8 +55,8 @@
   min-width: 100%;
   min-height:100%;
   background-size: cover;
-  background-position: center;
-}
+  /* background-position: center; */
+ }
 .login_banner_background{
   background-image: url("https://images.pexels.com/photos/4287012/pexels-photo-4287012.jpeg?cs=srgb&dl=pexels-miodrag-kitanovi%C4%87-4287012.jpg&fm=jpg")
 }
