@@ -11,8 +11,8 @@
 }
 @media only screen and (max-width: 600px) {
   .container_position {
-    width: 60%;
-    margin-top: 15vh;
+    width: 80%;
+    margin-top: 10vh;
   }
 }
 .logo_size{
