@@ -13,10 +13,10 @@ const App = () => {
     <>
       <Navbar />
       <Route exact path="/"><Home /></Route>
-      <Route exact path="/contact"><Contact /></Route>
-      <Route exact path="/about"><About /></Route>
-      <Route exact path="/signin"><Signin /></Route>
-      <Route exact path="/signup"><Signup /></Route>
+      <Route path="/contact"><Contact /></Route>
+      <Route path="/about"><About /></Route>
+      <Route path="/signin"><Signin /></Route>
+      <Route path="/signup"><Signup /></Route>
     </>
   )
 }
