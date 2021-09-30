@@ -41,9 +41,48 @@ const Signup = () => {
 
     return (
         <>
-          <div className="container bg-warning container_position">
-            <h1 className="text-center">Sign Up</h1>
+        <div className ="register_background">
+          <div className ="container register_container_background container_position">
             <hr />
+                <form method="POST" className ="row g-3">
+                    <div className ="col-md-6">
+                        <label for="inputName4" className ="form-label">Name</label>
+                        <input name="name" value={users.name} onChange={handleInputs} type="text" className ="form-control" id="inputName4" />
+                    </div>
+                    <div className ="col-md-6">
+                        <label for="inputEmail4" className ="form-label">Email</label>
+                        <input name="email" value={users.email} onChange={handleInputs} type="email" className ="form-control" id="inputEmail4" />
+                    </div>
+                    <div className ="col-12">
+                        <label for="inputPhone" className ="form-label">Phone No.</label>
+                        <input name="phone" value={users.phone} onChange={handleInputs} type="number" className ="form-control" id="inputPhone" />
+                    </div>
+                    <div className ="col-12">
+                        <label for="inputWork" className ="form-label">Work</label>
+                        <input name="work" value={users.work} onChange={handleInputs} type="text" className ="form-control" id="inputWork" />
+                    </div>
+                    <div className ="col-md-6">
+                        <label for="inputPassword" className ="form-label">Password</label>
+                        <input name="password" value={users.password} onChange={handleInputs} type="password" className ="form-control" id="inputPassword" />
+                    </div>
+                    <div className ="col-md-6">
+                        <label for="inputConfirmPassword" className ="form-label">Confirm Password</label>
+                        <input name="cpassword" value={users.cpassword} onChange={handleInputs} type="password" className ="form-control" id="inputConfirmPassword" />
+                    </div>
+                    <div className ="col-12">
+                        <button type="submit" onClick={postData} className ="btn btn-primary">Sign in</button>
+                    </div>
+                    <hr />
+                </form>
+          </div>
+        </div>  
+        </>
+    )
+}
+
+export default Signup;
+
+/*
             <input name="name" value={users.name} placeholder="your name" onChange={handleInputs}/>
             <hr />
             <input name="email" value={users.email} placeholder="your email" onChange={handleInputs}/>
@@ -58,9 +97,4 @@ const Signup = () => {
             <hr />
             <button type="submit" onClick={postData}>Register</button>
             <hr />
-          </div>
-        </>
-    )
-}
-
-export default Signup
+*/

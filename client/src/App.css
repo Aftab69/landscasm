@@ -59,6 +59,18 @@
   background-position: center;
  }
 .login_banner_background{
-  background-color: rgb(240, 220, 154);
-  box-shadow: 5px 10px 8px #2e2e2e
+  background-color: rgb(135, 236, 76);
+  box-shadow: 5px 10px 8px #2e2e2e;
+}
+.register_container_background{
+  background-color: rgb(211, 214, 210);
+  box-shadow: 5px 10px 8px #2e2e2e;
+}
+.register_background{
+  background-image: url("https://images.pexels.com/photos/1995730/pexels-photo-1995730.jpeg?cs=srgb&dl=pexels-darwis-alwan-1995730.jpg&fm=jpg");
+  position: absolute;
+  min-width: 100%;
+  min-height:100%;
+  background-size: cover;
+  background-position: center;
 }

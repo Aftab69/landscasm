@@ -44,11 +44,11 @@ const Signin = () => {
                         <hr />
                         <div className ="mb-3">
                             <label for="exampleInputEmail1" className ="form-label">Email address</label>
-                            <input name="email" value={user.email} placeholder="your email" onChange={handleInputs} type="email" className ="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <input name="email" value={user.email} onChange={handleInputs} type="email" className ="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         </div>
                         <div className ="mb-3">
                             <label for="exampleInputPassword1" className ="form-label">Password</label>
-                            <input name="password" value={user.password} placeholder="your password" onChange={handleInputs} type="password" className ="form-control" id="exampleInputPassword1" />
+                            <input name="password" value={user.password} onChange={handleInputs} type="password" className ="form-control" id="exampleInputPassword1" />
                         </div>
                         <button type="submit" onClick={verifyData} className ="btn btn-primary">Submit</button>
                         <hr />
