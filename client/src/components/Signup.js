@@ -69,7 +69,7 @@ const Signup = () => {
                         <input name="cpassword" value={users.cpassword} onChange={handleInputs} type="password" className ="form-control" id="inputConfirmPassword" />
                     </div>
                     <div className ="col-12">
-                        <button type="submit" onClick={postData} className ="btn btn-primary">Sign in</button>
+                        <button type="submit" onClick={postData} className ="btn btn-primary">Sign up</button>
                     </div>
                     <hr />
                 </form>
