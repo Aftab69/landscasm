@@ -1,7 +1,18 @@
 .container_position{
-  width: 50%;
   height: auto;
-  margin-top: 10%;
+  width: 40%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .container_position {
+    width: 60%;
+  }
 }
 .logo_size{
   height: 5vh;
@@ -30,7 +41,6 @@
     transform: translateX(10px);
   }
 }
-
 .homepage_container img{
   width: 40vh;
   height: 20vh;
@@ -38,4 +48,15 @@
   border: 2px solid #f39c12;
   border-radius: 15px;
   box-shadow: 5px 10px 8px #2e2e2e
+}
+.login_background{
+  background-image: url("https://images.pexels.com/photos/1172737/pexels-photo-1172737.jpeg?cs=srgb&dl=pexels-paola-l-1172737.jpg&fm=jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height:100%;
+  background-size: cover;
+  background-position: center;
+}
+.login_banner_background{
+  background-image: url("https://images.pexels.com/photos/3968175/pexels-photo-3968175.jpeg?cs=srgb&dl=pexels-tatiana-syrikova-3968175.jpg&fm=jpg")
 }

@@ -37,9 +37,29 @@ const Signin = () => {
     }
 
     return (
-        <div className="container container_position bg-warning">
-            <h1 className="text-center">Login page</h1>
-            <hr />
+        <div className="login_background">
+            <div className="container container_position login_banner_background">
+                    <form method="POST">
+                        <hr />
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input name="email" value={user.email} placeholder="your email" onChange={handleInputs} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input name="password" value={user.password} placeholder="your password" onChange={handleInputs} type="password" class="form-control" id="exampleInputPassword1" />
+                        </div>
+                        <button type="submit" onClick={verifyData} class="btn btn-primary">Submit</button>
+                        <hr />
+                    </form>       
+            </div>
+        </div>
+    )
+}
+
+export default Signin;
+
+/*
             <form method="POST">
             <input name="email" value={user.email} placeholder="your email" onChange={handleInputs} />
             <hr />
@@ -47,8 +67,5 @@ const Signin = () => {
             <hr />
             <button type="submit" onClick={verifyData}>Login</button>
             </form>
-        </div>
-    )
-}
+*/
 
-export default Signin;
